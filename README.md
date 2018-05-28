@@ -2,7 +2,7 @@
 
 Création d'une **Intro Star Wars**
 avec comme texte un traçage de mon parcours depuis le début de ma formation à BeCode.
-[BeCode] (https://becode.org/)
+[BeCode](https://becode.org/)
 
 ## Création
 
