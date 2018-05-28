@@ -13,10 +13,10 @@ avec comme texte un traçage de mon parcours depuis le début de ma formation à
 * CSS
   - Mise en place d'un **Background** en 3 couches (ciel étoilé)
   - Utilisation de `@keyframes` pour l'animation a la fois: 
-	> Du ciel étoilé
-	> Du titre
-	> Du logo
-	> Du texte
+	> Du ciel étoilé,
+	> du titre,
+	> du logo
+	> et du texte
 
 ### Lisibilité
 
