@@ -1,0 +1,171 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Avoid scrollbar */
+  
+    /* Center items */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 3 layers of parallax stars animation */
+@keyframes STAR-MOVE {
+	from {
+		left: 0;
+		top: 0;
+	}
+	to { 
+		left: -10000px;
+		top: -2000px;
+	}
+}
+
+/* First layer */
+#background {
+	background: black url(./images/background.png) repeat 5% 5%;
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;		
+	animation-name: STAR-MOVE;
+	animation-duration: 200s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+/* Second layer */
+#midground {
+	background: url(./images/midground.png) repeat 20% 20%;
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;	
+	animation-name: STAR-MOVE;
+	animation-duration: 150s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+/* Third layer */
+#foreground {
+	background: url(./images/foreground.png) repeat 35% 35%;
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;	
+	animation-name: STAR-MOVE;
+	animation-duration: 100s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+#title {
+    /* Style */
+    font-size: 32px;
+    color: #4bd5ee;
+    /* Animation */
+    /* Progressive appear & dissapear */
+    opacity: 0;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-name: a-long-time-ago;
+    animation-timing-function: ease-out;
+}
+
+@keyframes a-long-time-ago {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Set the animation & hide the logo */
+#logo {    
+    position: absolute;
+    top: 40%;
+    left: 42%;
+    z-index: 1;
+    margin: auto;
+    animation-name: logo;
+    animation-delay: 5s; /* Starts after the first one */
+    animation-duration: 10s;
+    animation-timing-function: ease-out;
+    opacity: 0;
+}
+
+#logo img {
+    width: inherit;
+}
+
+/* Scale the logo down and maintain it centered */
+@keyframes logo {
+    0% {
+        width: 25em;        
+        transform: scale(2.75);
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+        width: 18em;      
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.1);
+        width: 18em;        
+    }
+}
+
+
+.scroll {
+    /* Centering the element */
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 800px;
+    margin: 0 0 0 -400px;
+    top: auto;
+    bottom: 0;
+    height: 50em;
+    /* Style */
+    color: #ffff66;    
+    font-size: 64px;
+    text-align: justify;
+    /* Apply Transformation  */
+    transform-origin: center bottom;
+    transform: perspective(300px) rotateX(25deg);
+}
+
+.scroll > div {
+    /* Div at bottom of the screen (invisible) */
+    /* Animation make it go up proggressively */
+    position: absolute;
+    top: 100%; 
+    animation-delay: 15s; /* Start animation after second one */
+    animation-duration: 35s;
+    animation-name: crawl;
+    animation-timing-function: linear;
+}
+
+@keyframes crawl {
+    0% {
+        top: 100%;
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1; /* progressive dissapear at the end */
+    }
+
+    100% {
+        top: 0;
+        opacity: 0;
+    }
+}
