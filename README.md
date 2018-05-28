@@ -26,11 +26,13 @@ du code.
 #### Mise en ligne
 
 Mon projet a été déployé en tant que **Page GitHub**
+
 [Star Wars Crawl] (https://andreapinnapicone.github.io/Star-Wars-Crawl/)
 
 ##### Auteur
 
 Crée par **Andrea Pinna** le *28/05/2018*
+
 [GitHub Profile] (https://github.com/Andreapinnapicone)
 
 
