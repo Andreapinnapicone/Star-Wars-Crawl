@@ -5,6 +5,14 @@
     <title>Star Wars Crawl</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript">
+        window.onload=()=>{
+            window.setTimeout(function(){
+                console.log("timeout?");
+                document.getElementsByTagName("audio")[0].play();
+            }, 4500);
+        };
+    </script>
 </head>
 <body>
     <!--3 layers for parallax stars background-->
@@ -22,7 +30,7 @@
         <br>really sucks...
     </div>
     <div id="song">
-        <audio autoplay> 
+        <audio controls="controls"> 
             <source src="./css/Star Wars Theme.mp3" type="audio/mpeg">
             <source src="https://ia801703.us.archive.org/15/items/StarWarsThemeSongByJohnWilliams/Star%20Wars%20Theme%20Song%20By%20John%20Williams.ogg" type="audio/ogg">     
         </audio>
