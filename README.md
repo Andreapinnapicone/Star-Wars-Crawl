@@ -1,7 +1,7 @@
 # Star Wars Crawl
 
 
-![Star Wars Crawl](./Becode/Star-Wars-Crawl/css/images/Starwarscrawl.png "Screenshot of result)
+![Star Wars Crawl](./Becode/Star-Wars-Crawl/css/images/Starwarscrawl.png)
 
 Création d'une **Intro Star Wars**
 avec comme texte un traçage de mon parcours depuis le début de ma formation à BeCode.
